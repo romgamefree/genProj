@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Play Retro Bowl - Free Online Games">
+    <title>Retro Bowl - Play Free Online Games</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+    <!-- Sidebar -->
+    <div id="sidebar" class="fixed top-0 left-0 h-screen w-64 bg-gray-800 transform -translate-x-full transition-transform duration-200 ease-in-out z-50 md:translate-x-0">
+        <div class="flex flex-col h-full">
+            <!-- Logo -->
+            <div class="p-4 border-b border-gray-700">
+                <a href="/" class="text-2xl font-bold text-white hover:text-blue-400">
+                    GamePortal
+                </a>
+            </div>
+            
+            <!-- Search -->
+            <div class="p-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search games..." 
+                        class="w-full bg-gray-700 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="flex-grow overflow-y-auto">
+                <div class="px-4 py-2">
+                    <h3 class="text-xs uppercase text-gray-500 font-semibold">Menu</h3>
+                    <a href="/" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/trending" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                        <i class="fas fa-fire"></i>
+                        <span>Trending</span>
+                    </a>
+                    <a href="/new" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                        <i class="fas fa-star"></i>
+                        <span>New Games</span>
+                    </a>
+                </div>
+
+                <div class="px-4 py-2">
+                    <h3 class="text-xs uppercase text-gray-500 font-semibold">Categories</h3>
+                    <div class="space-y-1">
+                        <a href="/category/action" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Action</span>
+                        </a>
+                        <a href="/category/adventure" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-map"></i>
+                            <span>Adventure</span>
+                        </a>
+                        <a href="/category/arcade" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-ghost"></i>
+                            <span>Arcade</span>
+                        </a>
+                        <a href="/category/puzzle" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-puzzle-piece"></i>
+                            <span>Puzzle</span>
+                        </a>
+                        <a href="/category/racing" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-car"></i>
+                            <span>Racing</span>
+                        </a>
+                        <a href="/category/sports" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-basketball-ball"></i>
+                            <span>Sports</span>
+                        </a>
+                        <a href="/category/strategy" class="flex items-center space-x-2 py-2 px-2 rounded hover:bg-gray-700 text-gray-300">
+                            <i class="fas fa-chess"></i>
+                            <span>Strategy</span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Footer -->
+            <div class="p-4 border-t border-gray-700">
+                <div class="flex justify-center space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu button -->
+    <div class="fixed top-4 left-4 md:hidden z-50">
+        <button onclick="document.getElementById('sidebar').classList.toggle('-translate-x-full')" 
+                class="bg-gray-800 text-white p-2 rounded-lg focus:outline-none">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="md:ml-64">
+        <!-- Header -->
+        <header class="bg-gray-800 border-b border-gray-700">
+            <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+                <h1 class="text-xl font-bold">Retro Bowl</h1>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full">
+                        <i class="fas fa-play mr-2"></i>Play Now
+                    </button>
+                    <button class="bg-gray-700 hover:bg-gray-600 text-white p-2 rounded-full">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Game Content -->
+        <main class="container mx-auto px-4 py-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                <!-- Game Section -->
+                <div class="lg:col-span-9">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden">
+                        <div class="relative pt-[56.25%]">
+                            <iframe 
+                                src="https://retrobowl.click/game/retro-bowl" 
+                                class="absolute top-0 left-0 w-full h-full border-0"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="p-4">
+                            <div class="flex space-x-4 text-sm text-gray-400">
+                                <span><i class="fas fa-gamepad mr-2"></i>Sports</span>
+                                <span><i class="fas fa-users mr-2"></i>1 Player</span>
+                                <span><i class="fas fa-star mr-2"></i>4.8/5</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Game Description -->
+                    <div class="mt-6 bg-gray-800 rounded-lg p-4">
+                        <h2 class="text-xl font-bold mb-3">About Retro Bowl</h2>
+                        <p class="text-gray-300">
+                            Experience the thrill of classic American football in Retro Bowl! Take control of your favorite team, manage your roster, and lead them to victory in this engaging sports simulation game.
+                        </p>
+                    </div>
+
+                    <!-- Instructions -->
+                    <div class="mt-6 bg-gray-800 rounded-lg p-4">
+                        <h2 class="text-xl font-bold mb-3">How to Play</h2>
+                        <p class="text-gray-300">
+                            Use arrow keys to move, spacebar to throw the ball. Manage your team between games and make strategic decisions to improve your roster.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-3 space-y-6">
+                    <!-- Ad Space -->
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <script>google_ad_code_1</script>
+                    </div>
+
+                    <!-- Similar Games -->
+                    <div class="bg-gray-800 rounded-lg p-4">
+                        <h3 class="text-lg font-bold mb-4">Similar Games</h3>
+                        <div class="space-y-4">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

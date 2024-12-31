@@ -1,0 +1,74 @@
+{
+    "categories": [
+      {
+        "id": "action",
+        "name": "Action",
+        "icon": "fas fa-gamepad",
+        "description": "Fast-paced games full of excitement and adventure"
+      },
+      {
+        "id": "adventure",
+        "name": "Adventure",
+        "icon": "fas fa-map",
+        "description": "Explore new worlds and embark on epic journeys"
+      },
+      {
+        "id": "arcade",
+        "name": "Arcade",
+        "icon": "fas fa-ghost",
+        "description": "Classic arcade-style games with simple controls"
+      },
+      {
+        "id": "puzzle",
+        "name": "Puzzle",
+        "icon": "fas fa-puzzle-piece",
+        "description": "Challenge your mind with brain-teasing puzzles"
+      },
+      {
+        "id": "racing",
+        "name": "Racing",
+        "icon": "fas fa-car",
+        "description": "Race against time and opponents in thrilling competitions"
+      },
+      {
+        "id": "sports",
+        "name": "Sports",
+        "icon": "fas fa-basketball-ball",
+        "description": "Competitive sports games for athletes of all levels"
+      },
+      {
+        "id": "strategy",
+        "name": "Strategy",
+        "icon": "fas fa-chess",
+        "description": "Plan your moves and outsmart your opponents"
+      }
+    ],
+    "games": [
+      {
+        "id": "1",
+        "slug": "retro-bowl",
+        "name": "Retro Bowl",
+        "category": "Sports",
+        "players": "1 Player",
+        "rating": 4.8,
+        "iframe_url": "https://retrobowl.click/game/retro-bowl",
+        "thumbnail": "/games/retro-bowl-thumb.jpg",
+        "description": "Experience the thrill of classic American football in Retro Bowl! Take control of your favorite team, manage your roster, and lead them to victory in this engaging sports simulation game.",
+        "instructions": "Use arrow keys to move, spacebar to throw the ball. Manage your team between games and make strategic decisions to improve your roster.",
+        "ad_code": "<script>google_ad_code_1</script>"
+      },
+      {
+        "id": "2",
+        "slug": "tiny-fishing",
+        "name": "Tiny Fishing",
+        "category": "Casual",
+        "players": "1 Player",
+        "rating": 4.5,
+        "iframe_url": "https://retrobowl.click/game/tiny-fishing",
+        "thumbnail": "/games/tiny-fishing-thumb.jpg",
+        "description": "Dive into the relaxing world of Tiny Fishing! Cast your line, catch various fish species, upgrade your equipment, and become the master angler in this addictive fishing adventure.",
+        "instructions": "Click and hold to cast your line, release to start fishing. Upgrade your equipment to catch bigger fish and earn more rewards.",
+        "ad_code": "<script>google_ad_code_2</script>"
+      }
+    ]
+  }

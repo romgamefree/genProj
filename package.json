@@ -1,0 +1,16 @@
+{
+    "name": "generate-static-web",
+    "version": "1.0.0",
+    "description": "Tool to generate static web for unblocked games",
+    "main": "generate.js",
+    "scripts": {
+      "start": "node generate.js"
+    },
+    "dependencies": {
+      "path": "0.12.7"
+    },
+    "devDependencies": {},
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  
